@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         final Button button = (Button) findViewById(R.id.buttonid);
         final Context context = this;
 
-        //ZabbixParams params = new ZabbixParams("https://watch.litnet.lt/api_jsonrpc.php",false,"","","apiinfo.version");
+        //ZabbixParams params = new ZabbixParams("URL",false,"","","apiinfo.version");
         // Sužinome zabbix versiją
 /**        WorkActivity task = new WorkActivity(MainActivity.this);
         try {
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 //EditText password = (EditText)findViewById(R.id.password);
                 //String zabbix_password      =  password.getText().toString();
 
-                //ZabbixParams params = new ZabbixParams("https://watch.litnet.lt/api_jsonrpc.php", false, "jusumb@ktu.lt", "", "user.login");
+                //ZabbixParams params = new ZabbixParams("URL", false, "", "", "user.login");
                 params = new ZabbixParams(zabbix_uri, false, zabbix_username, zabbix_password, "user.login");
                 String result = null;
                 try {
